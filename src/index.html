@@ -14,28 +14,28 @@
     <H1>CIFRE E ENVIE SUA MENSAGEM </H1>
     <H2>NOS AJUDE A DESCOBRIR ONDE ESTÁ CARMEM SANDIEGO</H2>
     <H3>
-      <FIeldset>ATENÇÃO ESPIÃO</FIeldset>
+      <FIeldset>ATENÇÃO ESPIÃO: CIFRE SUAS INFORMAÇÕES PARA QUE CARMEM NÃO DESCUBRA QUE VOCÊ ESTA PERTO DE PEGA-LA</FIeldset>
     </H3>
 
     <form>
 
-      <div id="cipherEncode">
-        <p>DIGITE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="mensagem" id="time" />
-        <input type="submit" id="btn-encode" value="codificar" <?//onclick="calculaVelocidade()//>"/> <p><input
+      <div id="cipherEnc">
+        <p>DIGITE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="mensagem" id="mSecret" />
+        <input type="submit" id="btn-encode" value="codificar" onclick="cipherEnc()"/> <p><input
           placeholder="seu código é" id="encode" /></p>
       </div>
 
-      <div id="cipherDecode">
-        <p>DECODIFIQUE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="código" id="time" />
-        <input type="submit" id="btn-decode" value="decodificar" <?//onclick="calculaVelocidade()//>"/> <p><input
-          placeholder="seu código é" id="encode" /></p>
+      <div id="cipherDec">
+        <p>DECODIFIQUE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="código" id="deSecret" />
+        <input type="submit" id="btn-decode" value="decodificar" onclick="cipherDec()"/> <p><input
+          placeholder="seu código é" id="decode" /></p>
       </div>
 
 
     </form>
 
     <form>
-      <p id="labelsenha" class="extraCesar"> chave de codificação <input type="number" id="btn-numbercipher" /> </p>
+      <p > chave de codificação <input type="number" id="btn-numbercipher" /> </p>
       <p> * As letras da sua mensagem serão substituídas por letras em posições à frente conforme a chave de codificação
       </p>
     </form>
@@ -43,6 +43,6 @@
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-</body>
+    </body>
 
 </html>
