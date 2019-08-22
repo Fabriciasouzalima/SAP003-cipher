@@ -11,14 +11,16 @@
   <div id="root">
 
 
-    <H1>CIFRE E ENVIE SUA MENSAGEM </H1>
-    <H2>NOS AJUDE A DESCOBRIR ONDE ESTÁ CARMEM SANDIEGO</H2>
-    <H3>
-      <FIeldset>ATENÇÃO ESPIÃO: CIFRE SUAS INFORMAÇÕES PARA QUE CARMEM NÃO DESCUBRA QUE VOCÊ ESTA PERTO DE PEGA-LA</FIeldset>
-    </H3>
+    <H1>NOS AJUDE A DESCOBRIR ONDE ESTÁ CARMEM SANDIEGO </H1>
+    
+    <H2>
+      <form class="form1">
+      <p> ATENÇÃO ESPIÃO: CIFRE SUAS INFORMAÇÕES PARA QUE CARMEM NÃO DESCUBRA QUE VOCÊ ESTA PERTO DE PEGA-LA</p> 
+      </form>
+    </H2>
 
-    <form>
-
+    <form class="form2">
+      
       <div id="cipherEnc">
         <p>DIGITE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="mensagem" id="mSecret" />
         <input type="submit" id="btn-encode" value="codificar" onclick="cipherEnc()"/> 
@@ -35,7 +37,7 @@
     </form>
 
     <form>
-      <p > chave de codificação <input type="number" id="btn-numbercipher" /> </p>
+      <p > chave de codificação <input  id="deslocamento" /> </p>
       <p> * As letras da sua mensagem serão substituídas por letras em posições à frente conforme a chave de codificação
       </p>
     </form>
