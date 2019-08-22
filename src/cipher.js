@@ -1,11 +1,26 @@
 window.cipher = {
-  // ... 
+  cipherEncode: cipherEncode,
+  
 };
 
-//encode (msg e deslocamento){}
+function cipherEncode(mensagem, keyCode) {
+  let msgResult = '';
+  for (let i = 0; i<mensagem.length; i++) {
+    msgResult += String.fromCharCode(((mensagem.charCodeAt(i)- 65) + keyCode)% 26 + 65);
+  }
+  return msgResult;
+} 
+  
+  
 
+ 
 
-//decode (msg e deslocamento){}
+//let calc = ((messageAscii - 65) + keyCode)%26+65 
 
-// fórmula 
-// (letra em ascii - posição da letra + valor fixo)% 26(número de letras)+65
+function cipherEncode(mensagem, keyCode) {
+  let msgResult = '';
+  for (let i = 0; i < mensagem.length; i++) {
+    msgResult += String.fromCharCode(((mensagem.charCodeAt(i)- 65) + keyCode) % 26 + 65);
+  }
+  return msgResult;
+} 
