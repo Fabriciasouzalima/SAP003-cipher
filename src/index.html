@@ -21,24 +21,24 @@
 
     <form class="form2">
       
-      <div id="cipherEnc">
+      <div class= " firstCamp" id="cipherEnc">
         <p>DIGITE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="mensagem" id="mSecret" />
-        <input type="submit" id="btn-encode" value="codificar" onclick="cipherEnc()"/> 
-        <p id="encode"></p>
+        <input type="submit" id="btn-encode" value="codificar" onclick=" cipherEnc()"/> 
+        <p class="inputOne" id="encode"></p>
       </div>
 
-      <div id="cipherDec">
+      <div class= "secondCamp" id="cipherDec">
         <p>DECODIFIQUE AQUI SUA MENSAGEM SECRETA </p><input type="text" placeholder="código" id="deSecret" />
         <input type="submit" id="btn-decode" value="decodificar" onclick="cipherDec()"/>
-        <p id="decode"></p>
+        <p class="inputTwo" id="decode"></p>
       </div>
 
 
     </form>
 
     <form>
-      <p > chave de codificação <input  id="deslocamento" /> </p>
-      <p> * As letras da sua mensagem serão substituídas por letras em posições à frente conforme a chave de codificação
+      <p class="chaveCod" > chave de codificação <input  id="deslocamento" /> </p>
+      <p class="alerta"> * As letras da sua mensagem serão substituídas por letras em posições à frente conforme a chave de codificação
       </p>
     </form>
 
