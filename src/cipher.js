@@ -7,10 +7,8 @@ window.cipher = {
 function cipherEncode(mensagem, keyCode) {
   let msgResult = "";
   for (let i = 0; i < mensagem.length; i++) {
-    if (mensagem.charCodeAt(i) === 32) {
-      msgResult += "";
-    }
-    else if (mensagem.charCodeAt(i) >= 65 && mensagem.charCodeAt(i) <= 90) {
+    
+    if (mensagem.charCodeAt(i) >= 65 && mensagem.charCodeAt(i) <= 90) {
       msgResult += String.fromCharCode(((mensagem.charCodeAt(i) - 65) + keyCode) % 26 + 65);
     }
     else if (mensagem.charCodeAt(i) >= 97 && mensagem.charCodeAt(i) <= 122) {
@@ -27,10 +25,8 @@ function cipherEncode(mensagem, keyCode) {
 function cipherDecode(mensagem2, keyCode) {
   let msgResult2 = " ";
   for (let i = 0; i < mensagem2.length; i++) {
-    if (mensagem2.charCodeAt(i) === 32) {
-      msgResult2 += "";
-    }
-    else if (mensagem2.charCodeAt(i) >= 65 && mensagem2.charCodeAt(i) <= 90) {
+    
+    if (mensagem2.charCodeAt(i) >= 65 && mensagem2.charCodeAt(i) <= 90) {
       msgResult2 += String.fromCharCode(((mensagem2.charCodeAt(i) - 65) - keyCode) % 26 + 65);
     }
     else if (mensagem2.charCodeAt(i) >= 97 && mensagem2.charCodeAt(i) <= 122) {

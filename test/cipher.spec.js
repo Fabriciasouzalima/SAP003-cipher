@@ -7,10 +7,10 @@ describe("cipher", () => {
   describe("cipher.encode", () => {
 
     it("should be a function", () => {
-      assert.equal(typeof cipher.encode, 'function');
+      assert.equal(typeof cipher.encode, "function");
     });
 
-    it("should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33", () => {
+    it("should return \"HIJKLMNOPQRSTUVWXYZABCDEFG\" for \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" with offset 33", () => {
       assert.equal(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
 
@@ -52,7 +52,7 @@ describe("cipher", () => {
       assert.equal(typeof cipher.decode, "function");
     });
 
-    it("should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33", () => {
+    it("should return \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" for \"HIJKLMNOPQRSTUVWXYZABCDEFG\" with offset 33", () => {
       assert.equal(cipher.decode(33, "HIJKLMNOPQRSTUVWXYZABCDEFG"), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
     //

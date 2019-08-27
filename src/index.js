@@ -1,4 +1,7 @@
-function cipherEnc() {
+document.getElementById("btn-encode").addEventListener("click", cipherEnc);
+document.getElementById("btn-decode").addEventListener("click", cipherDec);
+
+function cipherEnc(event) {
   event.preventDefault();
   let mensagem = document.getElementById("mSecret").value;
   let keyCode = parseInt(document.getElementById("deslocamento").value);
@@ -7,7 +10,7 @@ function cipherEnc() {
 
 }	
                                                
-function cipherDec() {
+function cipherDec(event) {
   event.preventDefault();
   let mensagem2 = document.getElementById("deSecret").value;
   let keyCode = document.getElementById("deslocamento").value;
