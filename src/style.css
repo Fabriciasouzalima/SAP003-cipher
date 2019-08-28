@@ -7,7 +7,12 @@ body{
 
 h1{
     text-align:center
+    
 }
+h1{
+    color: aliceblue
+}
+
 .form1{
     text-align:center
 
@@ -15,21 +20,23 @@ h1{
 .form2{
     text-align:center;
     border: 4px solid;
+}
 
-
+h2{
+    color: aliceblue;
 }
 
 .firstCamp{
-    color: yellow
+    color: rgb(0, 255, 170)
 }
 .inputOne{
-    color: yellow
+    color: rgb(0, 255, 170)
 }
 .secondCamp{
-    color: yellow 
+    color: rgb(0, 255, 170)
 }
 .inputTwo{
-    color: yellow
+    color: rgb(0, 255, 170)
 }
 
 .chaveCod{
@@ -39,4 +46,28 @@ h1{
 .alerta{
     color: aliceblue 
 
+}
+
+.btn1{
+    width:100px;
+    height:24px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+.inputBtn1{
+    border-radius: 20px
+   
+}
+
+.btn2{
+    width:100px;
+    height:24px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+.inputBtn2{
+    border-radius: 20px
+}
+.offSet{
+    border-radius: 20px
 }
