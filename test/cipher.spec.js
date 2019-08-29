@@ -29,8 +29,8 @@ describe("cipher", () => {
     // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
     // teste abaixo.
     //
-    it("should return ' !@' for '!@'", () => {
-      assert.equal(cipher.encode(33, " !@"), "!@");
+    it("should return '!@' para '!@'", () => {
+      assert.equal(cipher.encode(33, " !@"), " !@");
     });
   });
 
@@ -59,7 +59,7 @@ describe("cipher", () => {
     // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
     // teste abaixo.
     //
-    it("should return ' !@' para ' !@'", () => {
+    it("should return '!@' para '!@'", () => {
       assert.equal(cipher.decode(33, "!@"), "!@");
     });
   });
