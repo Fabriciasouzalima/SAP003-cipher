@@ -10,41 +10,37 @@
 <body>
   <div id="root">
 
-
     <H1>NOS AJUDE A DESCOBRIR ONDE ESTÁ CARMEM SANDIEGO </H1>
-    
-    <H2>
-      <form class="form1">
-      <p> ATENÇÃO ESPIÃO: CIFRE SUAS INFORMAÇÕES PARA QUE CARMEM NÃO DESCUBRA QUE VOCÊ ESTA PERTO DE PEGA-LA</p> 
-      </form>
-    </H2>
 
-    <form class="form2">
-      
-      <div class= " firstCamp" id="cipherEnc">
-        <p>DIGITE AQUI SUA MENSAGEM SECRETA </p><input class="inputBtn1" type="text" placeholder="mensagem" id="mSecret" />
-        <input class="btn1" type="submit" id="btn-encode" value="codificar" /> 
+    <p> ATENÇÃO ESPIÃO: CIFRE SUAS INFORMAÇÕES PARA QUE CARMEM NÃO DESCUBRA QUE VOCÊ ESTA PERTO DE PEGA-LA</p>
+
+    <form class="form">
+
+      <div class="encode" id="cipherEnc">
+        <p>DIGITE AQUI SUA MENSAGEM SECRETA </p><input class="input" type="text" placeholder="mensagem" id="mSecret" />
+        <input class="input" type="submit" id="btn-encode" value="codificar" />
         <p class="inputOne" id="encode"></p>
       </div>
 
-      <div class= "secondCamp" id="cipherDec">
-        <p>DECODIFIQUE AQUI SUA MENSAGEM SECRETA </p><input class="inputBtn2" type="text" placeholder="código" id="deSecret" />
-        <input class="btn2" type="submit" id="btn-decode" value="decodificar" />
+      <div class="decode" id="cipherDec">
+        <p>DECODIFIQUE AQUI SUA MENSAGEM SECRETA </p><input class="input" type="text" placeholder="código"
+          id="deSecret" />
+        <input class="input" type="submit" id="btn-decode" value="decodificar" />
         <p class="inputTwo" id="decode"></p>
       </div>
 
 
     </form>
 
-    <form>
-      <p class="chaveCod" > Escolha sua chave de codificação <input class="offSet" type="number" id="deslocamento" /> </p>
-      <p class="alerta"> * As letras da sua mensagem serão substituídas por letras em posições à frente conforme a chave de codificação
-      </p>
-    </form>
 
+    <p class="chaveCod"> Escolha sua chave de codificação <input class="input" type="number" id="deslocamento" />
+    </p>
+    <p class="alerta"> * As letras da sua mensagem serão substituídas por letras em posições à frente conforme a chave
+      de codificação
+    </p>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    </body>
+</body>
 
 </html>

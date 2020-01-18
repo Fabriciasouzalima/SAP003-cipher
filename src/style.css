@@ -2,72 +2,37 @@ body{
     background-origin: initial;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://s2.glbimg.com/-rhHPRQlPxXTa4_UrGuGI7oyVrg=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/p/p/pk34uwTR2kon0aBuVYwA/desktop-carmen-smooth-clean.jpg");
+    background-image: url(./background.png);
 }
 
-h1{
-    text-align:center
-    
-}
-h1{
-    color: aliceblue
+.form{
+    display: flex;
+    text-align: center;
 }
 
-.form1{
-    text-align:center
 
-}
-.form2{
-    text-align:center;
-    border: 4px solid;
-}
-
-h2{
-    color: aliceblue;
-}
-
-.firstCamp{
-    color: rgb(0, 255, 170)
-}
-.inputOne{
-    color: rgb(0, 255, 170)
-}
-.secondCamp{
-    color: rgb(0, 255, 170)
-}
-.inputTwo{
-    color: rgb(0, 255, 170)
+.input{ 
+    text-align: center;
+    border-radius: 18px;
+    width: 238px;
+    height: 31px;
+    border: 1px solid #310000;
+    padding-left: 12px;
+    padding-top: 4px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.chaveCod{
-    color: aliceblue 
-}
-
-.alerta{
-    color: aliceblue 
+.encode .decode{
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
 
 }
 
-.btn1{
-    width:100px;
-    height:24px;
-    background-color:whitesmoke;
-    border-radius: 10px;
-}
-.inputBtn1{
-    border-radius: 20px
-   
-}
-
-.btn2{
-    width:100px;
-    height:24px;
-    background-color:whitesmoke;
-    border-radius: 10px;
-}
-.inputBtn2{
-    border-radius: 20px
-}
-.offSet{
-    border-radius: 20px
+p, h1{
+    text-align: center;
+    font-weight: 100;
+    color: #F2B705; 
 }
